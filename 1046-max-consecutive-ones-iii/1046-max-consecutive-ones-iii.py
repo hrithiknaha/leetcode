@@ -6,7 +6,7 @@ class Solution:
             if nums[right] == 0:
                 zero_count += 1
 
-            while zero_count > k:
+            if zero_count > k:
                 if nums[left] == 0:
                     zero_count -= 1
                 left += 1 
